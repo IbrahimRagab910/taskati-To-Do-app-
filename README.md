@@ -15,22 +15,20 @@
 
 ## 🚀 About The Project
 
-TASKATI is a modern task management application  
-that helps users organize their daily tasks efficiently.
+TASKATI is a modern task management application that helps users  
+organize their daily tasks efficiently.
 
-The intro screen animation is implemented using Lottie
-to provide a smooth onboarding experience.
+The intro screen animation is implemented using Lottie  
+to provide a smooth and modern onboarding experience.
 
 ---
 
 ## 📱 Screens Preview
 
 <p align="center">
-  <img src="screenshots/splash.png" width="260"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/start.png" width="260"/>
+  <img src="screenshots/splash_screen.png" width="250"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/start_screen.png" width="250"/>
 </p>
 
 ---
