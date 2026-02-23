@@ -26,11 +26,11 @@ to provide a smooth onboarding experience.
 ## 📱 Screens Preview
 
 <p align="center">
-  <img src="screenshots/splash_screen.png" width="260"/>
+  <img src="screenshots/splash.png" width="260"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/start_screen.png" width="260"/>
+  <img src="screenshots/start.png" width="260"/>
 </p>
 
 ---
