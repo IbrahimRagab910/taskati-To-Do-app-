@@ -13,6 +13,10 @@ dependencies:
   flutter_svg: ^2.2.3
   image_picker: ^1.2.1
   gap: ^3.0.1
+  shared_preferences: ^2.5.4
+  percent_indicator: ^4.2.5
+  date_picker_timeline: ^1.2.7
+  intl: ^0.20.2
   
      
 

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:taskati/core/constants/app_assets.dart';
+import 'package:taskati/core/services/shared_prefrences.dart';
 import 'package:taskati/core/styles/app_colors.dart';
 import 'package:taskati/core/styles/themes.dart';
 import 'package:taskati/features/intro/pages/splach_screen.dart';
-void main() {
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPref.init();
   runApp(const MainApp());
 }
 

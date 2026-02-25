@@ -2,12 +2,16 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:taskati/core/constants/app_assets.dart';
+import 'package:taskati/core/functions/navigation.dart';
+import 'package:taskati/core/services/shared_prefrences.dart';
 import 'package:taskati/core/styles/app_colors.dart';
 import 'package:taskati/core/styles/text_styles.dart';
 import 'package:taskati/core/widgets/custom_body_bottom.dart';
 import 'package:taskati/core/widgets/custom_input_section.dart';
 import 'package:taskati/core/widgets/dialogs.dart';
+import 'package:taskati/features/home/pages/home_screen.dart';
 
 class StartScreen extends StatefulWidget {
   const StartScreen({super.key});
@@ -119,9 +123,14 @@ class _StartScreenState extends State<StartScreen> {
             ),
             backgroundColor: AppColors.primaryColor,
           ),
-          onPressed: () {
+          onPressed: () async {
             if (nameController.text.isNotEmpty && path != null) {
               // navigate to next screen
+
+              SharedPref.setUserInfo(nameController.text, path!);
+              SharedPref.setBool(SharedPref.isUploadedKey, true);
+
+              pushReplacment(context, HomeScreen());
             } else if (nameController.text.isEmpty && path != null) {
               showSnakeBar(context: context, content: 'please enter your name');
             } else if (nameController.text.isNotEmpty && path == null) {

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:taskati/core/constants/app_assets.dart';
+import 'package:taskati/core/functions/navigation.dart';
+import 'package:taskati/core/services/shared_prefrences.dart';
 import 'package:taskati/core/styles/text_styles.dart';
+import 'package:taskati/features/home/pages/home_screen.dart';
 import 'package:taskati/features/intro/pages/start_screen.dart';
 
 class SplachScreen extends StatefulWidget {
@@ -13,17 +16,17 @@ class SplachScreen extends StatefulWidget {
 
 class _SplachScreenState extends State<SplachScreen> {
   @override
+  @override
   void initState() {
+    bool isuplouded = SharedPref.getBool(SharedPref.isUploadedKey);
+    // SharedPref.init();
     super.initState();
-    Future.delayed(Duration(seconds: 15), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) {
-            return StartScreen();
-          },
-        ),
-      );
+    Future.delayed(Duration(seconds: 5), () {
+      if (isuplouded) {
+        pushReplacment(context, HomeScreen());
+      } else {
+        pushReplacment(context, StartScreen());
+      }
     });
   }
 
