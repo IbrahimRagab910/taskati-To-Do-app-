@@ -12,7 +12,7 @@ class TasksBuilder extends StatefulWidget {
 
 class _TasksBuilderState extends State<TasksBuilder> {
   int _selectedIndex = 0;
-  bool isSelected(index) => _selectedIndex == index;
+  bool isSelected(int index) => _selectedIndex == index;
   @override
   Widget build(BuildContext context) {
     return Expanded(
