@@ -25,6 +25,7 @@ class _TasksBuilderState extends State<TasksBuilder> {
               });
             },
             labelPadding: EdgeInsets.symmetric(horizontal: 5),
+            overlayColor: WidgetStateProperty.all(Colors.transparent),
 
             indicatorWeight: 0,
             // indicatorSize: TabBarIndicatorSize.tab,
