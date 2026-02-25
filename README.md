@@ -29,6 +29,7 @@ to provide a smooth and modern onboarding experience.
   <img src="screenshots/splash.png" width="250"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="screenshots/start.png" width="250"/>
+  <img src="screenshots/home.png" width="250"/>
 </p>
 
 ---
